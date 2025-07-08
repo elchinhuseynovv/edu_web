@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPlatform - Learn Without Limits</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <i class="fas fa-graduation-cap"></i>
+                <span>EduPlatform</span>
+            </div>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#courses" class="nav__link">Courses</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#instructors" class="nav__link">Instructors</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__actions">
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search courses...">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                
+                <div class="user-menu">
+                    <button class="btn btn--primary" id="login-btn">Login</button>
+                    <button class="btn btn--outline" id="register-btn">Register</button>
+                </div>
+                
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero__container container">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    Learn Without <span class="text-gradient">Limits</span>
+                </h1>
+                <p class="hero__description">
+                    Unlock your potential with our comprehensive online courses. 
+                    Learn from industry experts and advance your career at your own pace.
+                </p>
+                
+                <div class="hero__buttons">
+                    <button class="btn btn--primary btn--large ripple-effect">
+                        Get Started
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn--outline btn--large">
+                        Browse Courses
+                    </button>
+                </div>
+                
+                <div class="hero__stats">
+                    <div class="stat">
+                        <span class="stat__number" data-target="50000">0</span>
+                        <span class="stat__label">Students</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number" data-target="500">0</span>
+                        <span class="stat__label">Courses</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number" data-target="100">0</span>
+                        <span class="stat__label">Instructors</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero__visual">
+                <div class="floating-elements">
+                    <div class="floating-element" style="--delay: 0s">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="floating-element" style="--delay: 1s">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="floating-element" style="--delay: 2s">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="floating-element" style="--delay: 3s">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero__background">
+            <div class="geometric-shape shape-1"></div>
+            <div class="geometric-shape shape-2"></div>
+            <div class="geometric-shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Course Categories -->
+    <section class="categories section" id="categories">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Explore Categories</h2>
+                <p class="section__description">
+                    Discover courses across various disciplines and skill levels
+                </p>
+            </div>
+            
+            <div class="categories__grid">
+                <div class="category-card glass-effect" data-category="programming">
+                    <div class="category-card__icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="category-card__title">Programming</h3>
+                    <p class="category-card__count">120+ Courses</p>
+                    <div class="category-card__overlay">
+                        <button class="btn btn--primary">Explore</button>
+                    </div>
+                </div>
+                
+                <div class="category-card glass-effect" data-category="design">
+                    <div class="category-card__icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="category-card__title">Design</h3>
+                    <p class="category-card__count">85+ Courses</p>
+                    <div class="category-card__overlay">
+                        <button class="btn btn--primary">Explore</button>
+                    </div>
+                </div>
+                
+                <div class="category-card glass-effect" data-category="business">
+                    <div class="category-card__icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="category-card__title">Business</h3>
+                    <p class="category-card__count">95+ Courses</p>
+                    <div class="category-card__overlay">
+                        <button class="btn btn--primary">Explore</button>
+                    </div>
+                </div>
+                
+                <div class="category-card glass-effect" data-category="marketing">
+                    <div class="category-card__icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3 class="category-card__title">Marketing</h3>
+                    <p class="category-card__count">70+ Courses</p>
+                    <div class="category-card__overlay">
+                        <button class="btn btn--primary">Explore</button>
+                    </div>
+                </div>
+                
+                <div class="category-card glass-effect" data-category="data-science">
+                    <div class="category-card__icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 class="category-card__title">Data Science</h3>
+                    <p class="category-card__count">60+ Courses</p>
+                    <div class="category-card__overlay">
+                        <button class="btn btn--primary">Explore</button>
+                    </div>
+                </div>
+                
+                <div class="category-card glass-effect" data-category="photography">
+                    <div class="category-card__icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3 class="category-card__title">Photography</h3>
+                    <p class="category-card__count">45+ Courses</p>
+                    <div class="category-card__overlay">
+                        <button class="btn btn--primary">Explore</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Courses -->
+    <section class="courses section" id="courses">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Featured Courses</h2>
+                <p class="section__description">
+                    Hand-picked courses from our expert instructors
+                </p>
+            </div>
+            
+            <div class="courses__filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="programming">Programming</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="business">Business</button>
+                <button class="filter-btn" data-filter="marketing">Marketing</button>
+            </div>
+            
+            <div class="courses__grid" id="courses-grid">
+                <!-- Course cards will be dynamically generated -->
+            </div>
+            
+            <div class="courses__navigation">
+                <button class="nav-btn nav-btn--prev" id="prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="nav-btn nav-btn--next" id="next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="features section">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Why Choose EduPlatform?</h2>
+                <p class="section__description">
+                    We provide the best learning experience with cutting-edge technology
+                </p>
+            </div>
+            
+            <div class="features__grid">
+                <div class="feature-card">
+                    <div class="feature-card__icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3 class="feature-card__title">Expert Instructors</h3>
+                    <p class="feature-card__description">
+                        Learn from industry professionals with years of real-world experience
+                    </p>
+                    <div class="feature-card__progress">
+                        <div class="progress-bar" data-progress="95"></div>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-card__icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="feature-card__title">Flexible Learning</h3>
+                    <p class="feature-card__description">
+                        Study at your own pace with lifetime access to course materials
+                    </p>
+                    <div class="feature-card__progress">
+                        <div class="progress-bar" data-progress="90"></div>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-card__icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 class="feature-card__title">Certificates</h3>
+                    <p class="feature-card__description">
+                        Earn recognized certificates upon successful course completion
+                    </p>
+                    <div class="feature-card__progress">
+                        <div class="progress-bar" data-progress="100"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials section">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">What Our Students Say</h2>
+                <p class="section__description">
+                    Real feedback from our learning community
+                </p>
+            </div>
+            
+            <div class="testimonials__slider" id="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-card__content">
+                        <div class="testimonial-card__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-card__text">
+                            "The JavaScript course completely transformed my career. The instructor's teaching style is exceptional and the projects are very practical."
+                        </p>
+                        <div class="testimonial-card__author">
+                            <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Sarah Johnson" class="author__image">
+                            <div class="author__info">
+                                <h4 class="author__name">Sarah Johnson</h4>
+                                <p class="author__course">JavaScript Mastery</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-card__content">
+                        <div class="testimonial-card__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-card__text">
+                            "Amazing platform! The UI/UX design course helped me land my dream job. The content is up-to-date and very comprehensive."
+                        </p>
+                        <div class="testimonial-card__author">
+                            <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Michael Chen" class="author__image">
+                            <div class="author__info">
+                                <h4 class="author__name">Michael Chen</h4>
+                                <p class="author__course">UI/UX Design Pro</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-card__content">
+                        <div class="testimonial-card__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-card__text">
+                            "The data science program is incredibly thorough. I went from beginner to getting hired as a data analyst in just 6 months!"
+                        </p>
+                        <div class="testimonial-card__author">
+                            <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Emily Rodriguez" class="author__image">
+                            <div class="author__info">
+                                <h4 class="author__name">Emily Rodriguez</h4>
+                                <p class="author__course">Data Science Bootcamp</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonials__dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <div class="footer__brand">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>EduPlatform</span>
+                    </div>
+                    <p class="footer__description">
+                        Empowering learners worldwide with high-quality online education. 
+                        Join millions of students and advance your career today.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Quick Links</h3>
+                    <ul class="footer__links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#instructors">Instructors</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Categories</h3>
+                    <ul class="footer__links">
+                        <li><a href="#">Programming</a></li>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Data Science</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Newsletter</h3>
+                    <p class="footer__newsletter-text">
+                        Subscribe to get updates on new courses and special offers
+                    </p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" class="newsletter-input">
+                        <button type="submit" class="btn btn--primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2025 EduPlatform. All rights reserved.</p>
+                <div class="footer__legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal" id="course-modal">
+        <div class="modal__content">
+            <button class="modal__close" id="close-modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal__body" id="modal-body">
+                <!-- Course details will be dynamically inserted -->
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="auth-modal">
+        <div class="modal__content modal__content--auth">
+            <button class="modal__close" id="close-auth-modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="auth-container">
+                <div class="auth-form" id="login-form">
+                    <h2>Welcome Back</h2>
+                    <form>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="Password" required>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">Login</button>
+                    </form>
+                    <p class="auth-switch">
+                        Don't have an account? 
+                        <a href="#" id="show-register">Sign up</a>
+                    </p>
+                </div>
+                
+                <div class="auth-form" id="register-form" style="display: none;">
+                    <h2>Create Account</h2>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="Password" required>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">Register</button>
+                    </form>
+                    <p class="auth-switch">
+                        Already have an account? 
+                        <a href="#" id="show-login">Sign in</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
